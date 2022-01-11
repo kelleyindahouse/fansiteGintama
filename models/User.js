@@ -13,6 +13,10 @@ const User = new Schema({
   posts: [{
     type: Schema.Types.ObjectId,
     ref: 'post'
+  }],
+  usercomments: [{
+    type: Schema.Types.ObjectId,
+    ref: 'post'
   }]
 }, { timestamps: true })
 
